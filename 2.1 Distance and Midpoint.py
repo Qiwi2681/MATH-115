@@ -16,12 +16,25 @@ class Point():
         """Returns the midpoint between two points"""
         return Point((self.x + other.x)/2, ((self.y + other.y)/2))
 
-A = Point(3, 5)
-B = Point(7, 9)
+    def midpoint_to_point(self, midpoint):
+        """Returns another point given staring point and midpoint"""
+        return Point((midpoint.x*2-self.x), (midpoint.y*2-self.y))
 
-print((A.distance(B)))
 
 
-mid = A.midpoint(B)
+A = Point(1/2, -1)
+B = Point(1, -3/4)
 
-print(mid.x, mid.y)
+#print((A.distance(B)))
+
+
+M = A.midpoint(B)
+
+#print(M.x, M.y)
+
+M = Point(5, -4)
+B = Point(7, -2)
+
+A = B.midpoint_to_point(M)
+
+#print(A.x, A.y)
