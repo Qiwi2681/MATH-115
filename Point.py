@@ -1,5 +1,3 @@
-import math
-
 class Point():
     """Represents a point of (x, y)"""
     def __init__(self, x, y):
@@ -30,38 +28,3 @@ class Point():
         y_avg = (self.y + other.y)/2
 
         return Point(x_avg, y_avg)
-
-    def midpoint_to_point(self, midpoint):
-        """Returns another point given staring point and midpoint"""
-        # (midpoint.x, midpoint.y)*2 - (given.x - given.y) = (target_x, target_y)
-
-        # 2 * midpoint
-        midpoint_x_2 = midpoint.x*2
-        midpoint_y_2 = midpoint.y*2
-
-        # midpoint - given point
-        other_x = midpoint_x_2-self.x
-        other_y = midpoint_y_2-self.y
-
-        return Point(other_x, other_y)
-
-
-
-A = Point(1/2, -1)
-B = Point(1, -3/4)
-
-#print((A.distance(B)))
-
-
-M = A.midpoint(B)
-
-#print(M.x, M.y)
-
-M = Point(5, -4)
-B = Point(7, -2)
-
-A = B.midpoint_to_point(M)
-
-print(A.x, A.y)
-
-print(math.sqrt(1))
