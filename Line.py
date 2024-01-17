@@ -24,6 +24,8 @@ class Line:
         total_dist_squared = a_avg**2 + b_avg**2
 
         # Pythagorean theorem:  Square root of distance^2 to distance
+        if total_dist_squared == 1 or total_dist_squared == -1:
+            print(f'+-{total_dist_squared}')
         distance = math.sqrt(total_dist_squared)
 
         return distance
