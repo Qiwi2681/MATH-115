@@ -1,9 +1,11 @@
-Used to sync between laptop & pc
+# Used to sync math notes between laptop & pc
 
-Takeaways:
+# Takeaways:
 
-Writing markdown on a laptop is hard; the keyboard is smaller so I have to look at the keys.
-Do not use whatever chart library this is. 
+1. Stop coding analytic geometry, do math.
+1. Writing markdown on a laptop is hard; the keyboard is smaller so I have to look at the keys.
+2. Do not use whatever 3d plot library this is.
+3. If i pick a plot library, see todo.
 
 
 TODO:
