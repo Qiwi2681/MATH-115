@@ -11,7 +11,7 @@ class Circle():
         if self.radius:
             return self.radius
         rad_line = Line(self.mid, point)
-        r = rad_line.distance
+        r = rad_line.get_distance()
         self.radius = r
         return self.radius
     

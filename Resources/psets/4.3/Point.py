@@ -2,7 +2,7 @@ import math
 
 class Point():
     """Represents a point of (x, y)"""
-    def __init__(self, x, y):
+    def __init__(self, x: float, y: float):
         self.x = x
         self.y = y
 
@@ -30,13 +30,3 @@ class Point():
         y_avg = (self.y + other.y)/2
 
         return Point(x_avg, y_avg)
-    
-
-class Point3D():
-    def __init__(self, x, y, z):
-        self.x = x
-        self.y = y
-        self.z = z
-
-    def __eq__(self, other):
-        return self.x == other.x and self.y == other.y and self.z == other.z

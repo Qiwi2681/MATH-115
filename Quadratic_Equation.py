@@ -39,7 +39,7 @@ parabolas = []
 # Iterate through all combinations of a and b
 for a in range(0, 10):
     for b in range(0, 10):
-        c = 0
+        c = 1
         parabola = Parabola(x_values)
         parabola.get_y_vals(a, b, c)
         parabolas.append(parabola)

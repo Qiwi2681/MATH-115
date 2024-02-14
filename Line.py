@@ -5,7 +5,8 @@ class Line:
     def  __init__(self, a:Point, b:Point) -> None:
         self.a = a
         self.b = b
-        self.distance = self.get_distance()
+        self.m = self.get_slope()
+        self.y_int = self.get_y_intercept()
         
     #distance formula
     def get_distance(self):
@@ -46,9 +47,20 @@ class Line:
 
         return midpoint
     
-a  = Point(5, 3)
-b = Point(-7, 6)
+
+
+    
+    def get_slope(self):
+        # difference in y / difference in x
+        return (b.y - a.y) / (b.x - a.x)
+    
+    def get_y_intercept(self):
+        # use slope to solve for b
+        return a.y - (a.x * self.m)
+    
+a  = Point(5, 12)
+b = Point(-6, -5)
 L = Line(a, b)
 M = L.midpoint()
 #print(M.x, M.y)
-#print(L.distance)
+print(L.m, L.y_int)
